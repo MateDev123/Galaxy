@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.glow-button {
+    --button-background: #09041e;
+    --button-color: #fff;
+    --button-shadow: rgba(33, 4, 104, 0.2);
+    --button-shine-left: rgba(120, 0, 245, 0.5);
+    --button-shine-right: rgba(200, 148, 255, 0.65);
+    --button-glow-start: #B000E8;
+    --button-glow-end: #009FFD;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+    font-family: inherit;
+    font-size: 50px;
+    font-weight: 500;
+    border-radius: 11px;
+    position: relative;
+    top: 7px;
+    line-height: 155px;
+    cursor: pointer;
+    color: var(--button-color);
+    padding: 0;
+    margin: 0;
+    background: none;
+    z-index: 1;
+    box-shadow: 0 8px 20px var(--button-shadow);
+}
+.glow-button .gradient {
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    overflow: hidden;
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
+    transform: scaleY(1.02) scaleX(1.005) rotate(-0.35deg);
+}
+.glow-button .gradient:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: scale(100.00) translateY(-60px) rotate(0deg) translateZ(0);
+    padding-bottom: 100%;
+    border-radius: 50%;
+    background: linear-gradient(90deg, var(--button-shine-left), var(--button-shine-right));
+    -webkit-animation: rotate linear 2s infinite;
+            animation: rotate linear 2s infinite;
+}
+.glow-button span {
+    z-index: 1;
+    position: relative;
+    display: block;
+    padding: 15px 0;
+    width: 400px;
+    border-radius: inherit;
+    background-color: var(--button-background);
+    overflow: hidden;
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
+}
+.glow-button span:before {
+    content: "";
+    position: absolute;
+    left: -16px;
+    top: -16px;
+    transform: translate(var(--pointer-x, 0px), var(--pointer-y, 0px)) translateZ(0);
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: var(--button-glow, transparent);
+    opacity: var(--button-glow-opacity, 0);
+    transition: opacity var(--button-glow-duration, 0.5s);
+    filter: blur(20px);
+}
+.glow-button:hover {
+    --button-glow-opacity: 1;
+    --button-glow-duration: .25s;
+}
+@-webkit-keyframes rotate {
+    to {
+        transform: scale(1.05) translateY(-60px) rotate(360deg) translateZ(0);
+    }
+}
+
+@keyframes rotate {
+    to {
+        transform: scale(1.05) translateY(-60px) rotate(360deg) translateZ(0);
+    }
+}
+.glow-button-background {
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+    text-shadow: 0px 3px 14px rgba(249, 250, 251, 0.562);
+    max-height: 200px;
+    height: 500px;
+    max-width: 500px;
+    width: 465px;
+}
+html {
+box-sizing: border-box;
+-webkit-font-smoothing: antialiased;
+}
+
+* {
+box-sizing: inherit;
+}
+*:before, *:after {
+box-sizing: inherit;
+}
+.overlay {
+position: fixed;
+width: 100%;
+height: 100vh;
+top: 0;
+left: 0;
+display: none;
+background-color: rgba(0, 0, 0, 0.5);
+z-index: 9999999999;
+}
+.popup {
+z-index: 9999999;
+position: relative;
+width: 100%;
+max-width: 600px;
+height: 40%;
+max-height: 500px;
+border-radius: 5px;
+margin: 4em auto;
+background: #151522;
+border-radius: none; 
+text-align: center;
+box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+-webkit-transform: translateY(-40px);
+-moz-transform: translateY(-40px);
+-ms-transform: translateY(-40px);
+-o-transform: translateY(-40px);
+transform: translateY(-40px);
+/* Force Hardware Acceleration in WebKit */
+-webkit-transition-property: -webkit-transform;
+-moz-transition-property: -moz-transform;
+transition-property: transform;
+-webkit-transition-duration: 0.3s;
+-moz-transition-duration: 0.3s;
+transition-duration: 0.3s;
+top: 25%;
+}
+.popup p {
+color: white;
+padding: 100px 40px;
+text-align: center;
+font-family: 'Montserrat', sans-serif;
+font-size: 50px;
+}
+.popup a {
+color: white;
+position: fixed;
+bottom: 15px;
+text-align: center;
+left: 37%;
+font-family: 'Montserrat', sans-serif;
+font-size: small;    
+z-index: 999999;
+}
+.close-popup {
+position: absolute;
+top: 5px;
+right: 15px;
+width: 20px;
+height: 20px;
+cursor: pointer;
+z-index: 999999;
+}
+.overlay51 {
+position: fixed;
+width: 100%;
+height: 100vh;
+top: 0;
+left: 0;
+display: none;
+background-color: rgba(0, 0, 0, 0.5);
+z-index: 9999999999;
+}
+.popup51 {
+z-index: 9999999;
+position: relative;
+width: 100%;
+max-width: 230px;
+height: 100%;
+max-height: 300px;
+border-radius: 5px;
+margin: 4em auto;
+background: #000000;
+border-radius: none; 
+text-align: left;
+box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+-webkit-transform: translateY(-40px);
+-moz-transform: translateY(-40px);
+-ms-transform: translateY(-40px);
+-o-transform: translateY(-40px);
+transform: translateY(-40px);
+/* Force Hardware Acceleration in WebKit */
+-webkit-transition-property: -webkit-transform;
+-moz-transition-property: -moz-transform;
+transition-property: transform;
+-webkit-transition-duration: 0.3s;
+-moz-transition-duration: 0.3s;
+transition-duration: 0.3s;
+top: 49%;
+right: 43%;
+}
+.popup51 p {
+color: white;
+padding: 20px 5px;
+text-align: left;
+font-family: 'Poppins', sans-serif;
+font-size:large;
+}
+.popup51 a {
+color: white;
+position: relative;
+top: -10%;
+left: 2%;
+text-indent: 50px;
+line-height: 2;
+text-align: left;
+grid-row-end: 3;
+font-family: 'Poppins', sans-serif;
+font-size:large;
+z-index: 999999;
+}
+.close-popup51 {
+position: absolute;
+top: 5px;
+right: 15px;
+width: 20px;
+height: 20px;
+cursor: pointer;
+z-index: 999999;
+}

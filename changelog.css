@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alexandria&display=swap');
+#changelogTitle {
+	margin-top: 1rem;
+	margin-left: calc(100% - 80%);
+	font-family: 'Red Hat Text', sans-serif;
+	color: #ff6a13;
+}
+#container {
+	margin: 1rem auto;
+	height: auto;
+	width: 100%;
+	display: block;
+	background: transparent;
+	border-radius: 4px;
+	padding-bottom: 1rem;
+}
+.updateContainer {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	margin-left: 1rem;
+	width: 95%;
+	display: grid;
+	grid-template-columns: auto 87%;
+}
+.updateContainer:not(:last-of-type) {
+	border-bottom: 1px solid #444;
+}
+.updateDate {
+	font-family: 'Red Hat Text', sans-serif;
+	font-size: 16px;
+	margin-top: -5px;
+	margin-bottom: .2rem;
+	font-weight: 200;
+	text-align: end;
+	color: #aaa;
+}
+.updateList {
+	font-family: 'Red Hat Text', sans-serif;
+	list-style-type: none;
+	margin-left: 1.5rem;
+}
+.changelist {
+	display: grid;
+	grid-template-columns: auto 5fr;
+}
+.changelist:not(:first-child) {
+	margin: .5rem 0;
+}
+
+.type {
+	margin-right: 1rem;
+	display: inline-block;
+	padding: .1rem 0;
+	width: 6rem;
+	height: 0.9rem;
+	text-align: center;
+	border-radius: 4px;
+	font-size: 10px;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+.fixed {
+	background: #28a745;
+	color: rgb(22 25 37);
+    font-family: 'Alexandria', sans-serif;
+}
+.dev {
+	background: #0366d6;
+	color: rgb(22 25 37);
+    font-family: 'Alexandria', sans-serif;
+}
+.new {
+	background: #FFAB00;
+	color: rgb(22 25 37);
+    font-family: 'Alexandria', sans-serif;
+}
+.removed {
+	background: #FF5630;
+	color: rgb(22 25 37); 
+    font-family: 'Alexandria', sans-serif;
+}
+.xmas-event {
+	background: #c54245;
+	color: rgb(22 25 37); 
+    font-family: 'Alexandria', sans-serif;
+}
+.done {
+	background: #951ef6;
+	color: rgb(22 25 37); 
+    font-family: 'Alexandria', sans-serif;
+}
+.done {
+	background: #951ef6;
+	color: rgb(22 25 37); 
+    font-family: 'Alexandria', sans-serif;
+}
+.goal {
+	background: #e23a2e;
+	color: rgb(22 25 37);
+	font-family: 'Alexandria', sans-serif;
+}
+.leak{
+	background:  #003CC5;
+	color: rgb(22 25 37);
+	font-family: 'Alexandria', sans-serif;
+}
+.changelistText {
+	font-size: 12px;
+	color: #bbb;
+}
+.cimage{
+	padding-left: 5px;
+}
+.newCategory {
+	background: #555;
+	color: #ccc;
+	border-radius: 6px;
+	padding: 0 .4rem;
+	font-size: 10px;
+	text-transform: uppercase;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.newDebug {
+	font-family: 'Consolas';
+	font-size: 11px;
+	background: #e3b75f;
+	color: #111;
+	padding: 0 .4rem;
+	font-style: italic;
+	border-radius: 4px;
+}
+.updateVersion {
+	color: #aaa;
+	font-family: 'Red Hat Text', sans-serif;
+	font-size: 12px;
+	line-height: 0.9rem;
+	width: 1.5rem;
+	justify-self: end;
+	height: 0.9rem;
+	display: block;
+	text-align: center;
+}
+.updateHeader {
+	display: grid;
+	grid-template-rows: 1.1rem auto;
+}

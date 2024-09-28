@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="https://emojis.wiki/emoji-pics/microsoft/milky-way-microsoft.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="goal-css.css">
+  <link rel="stylesheet" href="Calculator.css">
+  <link rel="stylesheet" href="./xmas-snowfal.css">
+  <link rel="stylesheet" href="./xmas-light.css">
+  <link rel="stylesheet" href="./hamburgermenu2.css">
+  <link rel="stylesheet" href="./hamburgermenu_music.css">
+  <link rel="stylesheet" href="./hamburgermenu_backround.css">
+  <link rel="stylesheet" href="notification.css"/>
+  <link rel="stylesheet" href="dropdownmenu.css"/>
+  <title>Galaxy</title>
+</head>
+
+<body>
+  <!-- partial:index.partial.html -->
+  <div class="video-bg">
+    <video id="myVideo" width="320" height="240" autoplay="" loop="" muted="">
+      <source
+        src="https://static.videezy.com/system/resources/previews/000/005/054/original/Cieling_Flames_4K_Motion_Background_Loop.mp4"
+        type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <div class="app">
+    <div class="header">
+      <div class="header-menu">
+        <a class="menu-link notify" href="index.html">Goal</a>
+        <a class="menu-link notify" >ㅤㅤㅤㅤㅤ</a>
+        <div class="dropdown">
+            <button class="dropdown-toggle">Goal Menu</button>
+            <div class="dropdown-content" id="myDropdown">
+              <a class="menu-link notify" href="index.html">Goal</a>
+              <a class="menu-link notify" href="Goal_GPU.html">GPU</a>
+              <a class="menu-link notify" href="CPU.html">CPU</a>
+              <a class="menu-link notify" href="Motherboard.html">Motherboard</a>
+              <a class="menu-link notify" href="Pc_Case.html">Pc Case</a>
+              <a class="menu-link notify" href="SSD.html">SSD</a>
+              <a class="menu-link notify" href="Games.html">Games</a>
+              <a class="menu-link notify" href="Medence.html">Medence</a>
+            </div>
+        </div>
+        <a class="menu-link is-active" href="Claculator.html">Calculator</a>
+        <a class="menu-link notify" href="Update.html">Update</a>
+        <a class="menu-link notify" href="Changelog.html">Changelog</a>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="main-container">
+        <div class="content-wrapper" style="align-items: center;
+       justify-content: center;">
+          <section class="calculator">
+            <header class="calculator-header">
+              <div class="calc">
+                <h1 class="display gradient-border2" id="box">0</h1>
+            </header>
+            <main class="calculator-body">
+            </main>
+            <div class="calculator-button-wrapper">
+              <button type="button" class="calculator-button" onclick="clearLast()">
+                <span>C</span>
+              </button>
+              <button type="button" class="calculator-button" onclick="showInDisplay('/')">
+                <span>
+                  <svg width="1em" height="1em" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M5 10C5 9.83424 5.06585 9.67527 5.18306 9.55806C5.30027 9.44085 5.45924 9.375 5.625 9.375H14.375C14.5408 9.375 14.6997 9.44085 14.8169 9.55806C14.9342 9.67527 15 9.83424 15 10C15 10.1658 14.9342 10.3247 14.8169 10.4419C14.6997 10.5592 14.5408 10.625 14.375 10.625H5.625C5.45924 10.625 5.30027 10.5592 5.18306 10.4419C5.06585 10.3247 5 10.1658 5 10Z"
+                      fill="currentColor" />
+                    <circle cx="10" cy="7" r="1" fill="currentColor" />
+                    <circle cx="10" cy="13" r="1" fill="currentColor" />
+                  </svg>
+                </span>
+              </button>
+              <button type="button" class="calculator-button" onclick="showInDisplay('*')">
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-x"
+                    viewBox="0 0 16 16">
+                    <path
+                      d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                  </svg>
+                </span>
+              </button>
+              <button type="button" class="calculator-button" onclick="clearAll()">
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
+                    class="bi bi-eraser-fill" viewBox="0 0 16 16">
+                    <path
+                      d="M8.086 2.207a2 2 0 0 1 2.828 0l3.879 3.879a2 2 0 0 1 0 2.828l-5.5 5.5A2 2 0 0 1 7.879 15H5.12a2 2 0 0 1-1.414-.586l-2.5-2.5a2 2 0 0 1 0-2.828l6.879-6.879zm.66 11.34L3.453 8.254 1.914 9.793a1 1 0 0 0 0 1.414l2.5 2.5a1 1 0 0 0 .707.293H7.88a1 1 0 0 0 .707-.293l.16-.16z" />
+                  </svg>
+                </span>
+              </button>
+              <button type="button" class="calculator-button highlight" onclick="showInDisplay(7)">
+                <span>7</span>
+              </button>
+              <button type="button" class="calculator-button highlight" onclick="showInDisplay(8)">
+                <span>8</span>
+              </button>
+              <button type="button" class="calculator-button highlight" onclick="showInDisplay(9)">
+                <span>9</span>
+              </button>
+              <button type="button" class="calculator-button" onclick="showInDisplay('-')">
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
+                    class="bi bi-dash" viewBox="0 0 16 16">
+                    <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z" />
+                  </svg>
+                </span>
+              </button>
+              <button type="button" class="calculator-button highlight" onclick="showInDisplay(4)">
+                <span>4</span>
+              </button>
+              <button type="button" class="calculator-button highlight" onclick="showInDisplay(5)">
+                <span>5</span>
+              </button>
+              <button type="button" class="calculator-button highlight" onclick="showInDisplay(6)">
+                <span>6</span>
+              </button>
+              <button type="button" class="calculator-button" onclick="showInDisplay('+')">
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
+                    class="bi bi-plus" viewBox="0 0 16 16">
+                    <path
+                      d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                  </svg>
+                </span>
+              </button>
+              <button type="button" class="calculator-button highlight" onclick="showInDisplay(1)">
+                <span>1</span>
+              </button>
+              <button type="button" class="calculator-button highlight" onclick="showInDisplay(2)">
+                <span>2</span>
+              </button>
+              <button type="button" class="calculator-button highlight" onclick="showInDisplay(3)">
+                <span>3</span>
+              </button>
+              <button type="button" class="calculator-button equal" onclick="calc(), Toast_success()">
+                <span>
+                  <svg width="1em" height="1em" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M5.00006 8.625C5.00006 8.45924 5.06591 8.30027 5.18312 8.18306C5.30033 8.06585 5.4593 8 5.62506 8H14.3751C14.5408 8 14.6998 8.06585 14.817 8.18306C14.9342 8.30027 15.0001 8.45924 15.0001 8.625C15.0001 8.79076 14.9342 8.94973 14.817 9.06694C14.6998 9.18415 14.5408 9.25 14.3751 9.25H5.62506C5.4593 9.25 5.30033 9.18415 5.18312 9.06694C5.06591 8.94973 5.00006 8.79076 5.00006 8.625Z"
+                      fill="currentColor" />
+                    <path
+                      d="M5.00006 12.25C5.00006 12.0842 5.06591 11.9253 5.18312 11.8081C5.30033 11.6908 5.4593 11.625 5.62506 11.625H14.3751C14.5408 11.625 14.6998 11.6908 14.817 11.8081C14.9342 11.9253 15.0001 12.0842 15.0001 12.25C15.0001 12.4158 14.9342 12.5747 14.817 12.6919C14.6998 12.8092 14.5408 12.875 14.3751 12.875H5.62506C5.4593 12.875 5.30033 12.8092 5.18312 12.6919C5.06591 12.5747 5.00006 12.4158 5.00006 12.25Z"
+                      fill="currentColor" />
+                  </svg>
+                </span>
+              </button>
+              <button type="button" class="calculator-button highlight" onclick="showInDisplay('%')">
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor"
+                    class="bi bi-percent" viewBox="0 0 16 16">
+                    <path
+                      d="M13.442 2.558a.625.625 0 0 1 0 .884l-10 10a.625.625 0 1 1-.884-.884l10-10a.625.625 0 0 1 .884 0zM4.5 6a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm0 1a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zm7 6a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm0 1a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z" />
+                  </svg>
+                </span>
+              </button>
+              <button type="button" class="calculator-button highlight" onclick="showInDisplay(0)">
+                <span>0</span>
+              </button>
+              <button type="button" class="calculator-button highlight" onclick="showInDisplay('.')">
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-dot"
+                    viewBox="0 0 16 16">
+                    <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </section>
+          <div class="overlay-app"></div>
+        </div>
+        <div>
+        </div>
+        <div class="container44">
+          <input type="checkbox" id="toggle2" />
+          <div class="menu__toggle2">
+            <label class="menu__button2" for="toggle2">
+              <div class="menu__bar2"></div>
+              <div class="menu__bar2"></div>
+              <div class="menu__bar2"></div>
+            </label>
+          </div>
+          <div class="menu2">
+            <div class="menu__item2 open-gpopu2-button"><i class="fa-solid fa-music fa-2x"></i></div>
+            <div class="menu__item2 open-gpopup-button"><i class="fa-regular fa-image fa-2x"></i></div>
+            <div class="gpopu2-container">
+              <div class="gpopu2">
+                <div class="gpopu2-content">
+                  <span onclick="Toast_success()" class="close-gpopu2"><i class="fa-solid fa-circle-xmark fa-2x"></i></span>
+                </div>
+                <div class="gpopu2-body">
+                  <div class="simple-audio-player" id="simp"
+                    data-config='{"shide_top":false,"shide_btm":false,"auto_load":false}'>
+                    <div class="simp-playlist">
+                      <ul>
+                        <li class="simp-active"><span class="simp-source"
+                            data-src="https://files.gospeljingle.com/uploads/music/2023/01/Ti_sto_-_Lay_Low.mp3"
+                            data-cover="https://i.scdn.co/image/ab67616d00001e02c8fdaf1b33263d88246ba90a">1. Lay
+                            Low</span><span class="simp-desc">Tiësto</span></li>
+                        <li><span class="simp-source"
+                            data-src="https://pl.mp3xe.net/files/2021/07/Anthony%20Keyrouz%20feat.%20Glaceo%20-%20Last%20Melody.mp3"
+                            data-cover="https://i.scdn.co/image/ab67616d00001e02647505d39aa6bfb0e11dfe5f">2. Last
+                            Melody</span><span class="simp-desc">Anthony Keyrouz & Glaceo</span></li>
+                        <li><span class="simp-source"
+                            data-src="https://pl.mp3xe.net/files/2022/07/Meduza%20&%20James%20Carter%20feat.%20Elley%20Duhe%20&%20Fast%20Boy%20-%20Bad%20Memories.mp3"
+                            data-cover="https://i.scdn.co/image/ab67616d00001e0220abd13bf81d8ee406827c38">3. Bad
+                            Memories</span><span class="simp-desc">MEDUZA</span></li>
+                        <li><span class="simp-source"
+                            data-src="https://djsofpanvel.co.in/upload_file/11/95/Ti%C3%ABsto%20KSHMR%20feat%20Vassy%20-%20Secrets-DjsofpanveL.In.mp3"
+                            data-cover="https://i1.sndcdn.com/artworks-000212131377-3s38im-t500x500.jpg">4.
+                            Secrets</span><span class="simp-desc">Tiësto & KSHMR</span></li>
+                        <li><span class="simp-source"
+                            data-src="https://www.ringtonesbull.com/wp-content/uploads/2021/12/Thunder-.mp3"
+                            data-cover="https://upload.wikimedia.org/wikipedia/en/a/ac/Thunder_Gabry_Ponte.jpg">5.
+                            Thunder</span><span class="simp-desc">Gabry Ponte, LUM!X, Prezioso</span></li>
+                        <li><span class="simp-source"
+                            data-src="https://apiyt.com/converted.php?utm_source=api&sid=oMTUB0ji6Io;1680778411;7c093faf200741981415dd90028d9a5&t=&engine=undefined"
+                            data-cover="https://i1.sndcdn.com/artworks-000538968582-p4uehv-t500x500.jpg">6. Vamos a la
+                            playa</span><span class="simp-desc">Erikootsa</span></li>
+                        <li><span class="simp-source"
+                            data-src="https://ve60.aadika.xyz/download/jwdFJOOtg94/mp3/320/1680775908/810c5d3edcc9baebb96094b3250d35513ca131837bbd38115cfb59dde219fff0/1?f=yt5s.io"
+                            data-cover="https://i1.sndcdn.com/artworks-000076279296-xr99x7-t500x500.jpg">7. Safe And
+                            Sound</span><span class="simp-desc">Capital Cities</span></li>
+                        <li><span class="simp-source"
+                            data-src="https://dl.muzlove.net/files/track/2019/08/kshmr_feat._mike_waters_-_my_best_life_(club_mix).mp3"
+                            data-cover="https://a10.gaanacdn.com/gn_img/albums/w4MKPDOKoj/4MKPLovjKo/size_l.jpg">8. My
+                            Best Life</span><span class="simp-desc">KSHMR</span></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="gpopup-container">
+              <div class="gpopup">
+                <div class="gpopup-content">
+                  <span onclick="Toast_success()" class="close-gpopup"><i class="fa-solid fa-circle-xmark fa-2x"></i></span>
+                </div>
+                <div class="gpopup-body">
+                  <div class="video-select bg-videocon">
+                    <button class="bg-videobutton item235" onclick="changeVideo('https://static.videezy.com/system/resources/previews/000/005/065/original/Dynamic_Smear_4K_Motion_Background_Loop.mp4')"><img
+                        src="https://static.videezy.com/system/resources/thumbnails/000/005/065/small/dynamic-smear-4k-motion-background-loop.jpg" alt="1" border="0" /></button>
+                    <button class="bg-videobutton item235" onclick="changeVideo('https://static.videezy.com/system/resources/previews/000/005/042/original/Beautiful_Slide_4K_Motion_Background_Loop.mp4')"><img
+                        src="https://static.videezy.com/system/resources/thumbnails/000/005/042/small/Beautiful_Slide_4K_Motion_Background_Loop.jpg" alt="2" border="0" /></button>
+                    <button class="bg-videobutton item235" onclick="changeVideo('https://static.videezy.com/system/resources/previews/000/005/074/original/Glass_Slide_4K_Motion_Background_Loop.mp4')"><img
+                        src="https://static.videezy.com/system/resources/thumbnails/000/005/074/small/glass-slide-4k-motion-background-loop.jpg" alt="3" border="0" /></button>
+                    <div class="row22">
+                      <button class="bg-videobutton item235" onclick="changeVideo('https://static.videezy.com/system/resources/previews/000/005/040/original/Arrow_Slide_4K_Motion_Background_Loop.mp4')"><img
+                          src="https://static.videezy.com/system/resources/thumbnails/000/005/040/small/Arrow_Slide_4K_Motion_Background_Loop.jpg" alt="4" border="0" /></button>
+                      <button class="bg-videobutton item235" onclick="changeVideo('https://static.videezy.com/system/resources/previews/000/005/070/original/Galactic_Slide_4K_Motion_Background_Loop.mp4')"><img
+                          src="https://static.videezy.com/system/resources/thumbnails/000/005/070/small/galactic-slide-4k-motion-background-loop.jpg" alt="5" border="0" /></button>
+                      <button class="bg-videobutton item235" onclick="changeVideo('https://static.videezy.com/system/resources/previews/000/005/093/original/Royal_Slide_4K_Motion_Background_Loop.mp4')"><img
+                          src="https://static.videezy.com/system/resources/thumbnails/000/005/093/small/royal-slide-4k-motion-background-loop.jpg" alt="6" border="0" /></button>
+                      <button class="resetbutton"
+                        onclick="changeVideo('https://static.videezy.com/system/resources/previews/000/005/054/original/Cieling_Flames_4K_Motion_Background_Loop.mp4')"><i
+                          class="fa-solid fa-rotate-left fa-5x" title="Reset"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+            </div>
+            </div>
+      <div class="overlay-app"></div>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+      <script src="./goal-js.js"></script>
+      <script src="https://kit.fontawesome.com/2ec021d68b.js" crossorigin="anonymous"></script>
+      <script src="./Calculator.js"></script>
+      <script src="./formatter.js"></script>
+      <script src="./glow-button.js"></script>
+      <script src="./popup.js"></script>
+      <script src="./xmas-popup.js"></script>
+      <script src='https://unpkg.co/gsap@3/dist/gsap.min.js'></script>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/Ripple.js/1.2.1/ripple.min.js'></script>
+      <script src="./xmas-tree.js"></script>
+      <script src='https://unpkg.co/gsap@3/dist/gsap.min.js'></script>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.4.2/chroma.min.js'></script>
+      <script src="./popup2.js"></script>
+      <script src="./hamburgermenu_backround.js"></script>
+      <script src="./hamburgermenu_all.js"></script>
+      <script src="./hamburgermenu_all2.js"></script>
+      <script src="./backroundchange.js"></script>
+      <script src="./hamburgermenu_music.js"></script>
+      <script src="galaxy.js"></script>
+      <script src="notification.js"></script>
+      <script src="dropdownmenu.js"></script>
+</body>
+
+</html>
