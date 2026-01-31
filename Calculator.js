@@ -1,4 +1,4 @@
-let keyPad = document.querySelector(".keypad");
+let keyPad = document.querySelector(".calculator-button-wrapper");
 let displayBox = document.querySelector('.display');
 let operators = ["+", "-", "*", "/", "%"];
 
@@ -34,7 +34,11 @@ let showInDisplay = x => {
 let calc = _ => {
   //နောက်ဆုံး char ဟာ operator ထည်းမက မဖြစ်မ တွက်မယ်လို့ စဥ်စားထားတာဖြစ်ပါတယ်
   if (!operators.includes(displayBox.innerText[displayBox.innerText.length - 1])) {
-    displayBox.innerText = eval(displayBox.innerText)
+    try {
+      displayBox.innerText = eval(displayBox.innerText)
+    } catch (e) {
+      displayBox.innerText = "Error"
+    }
   }
 }
 
